@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick football quiz app</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="../image/usericon.png">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gulzar&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title"> 
+            <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> 
+            Football quiz game
+            <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+        </h1>
+    <div id="start" style="display: block;">
+    <a href="#" onclick="startGame()">Start game</a>
+    </div>
+    <div class="question" id="quiz" style="display:none">
+        <h2 id="title"></h2>
+        <ul class="questions">
+            <li>
+                <input type="radio" name="cautraloi" class="theAnswer" id="quest_a">
+               <span>A. <label id="a_theAnswer" for="a"></label></span>
+            </li>
+
+            <li>
+                <input type="radio" name="cautraloi" class="theAnswer" id="quest_b">
+               <span>B. <label id="b_theAnswer" for="b"></label></span>
+            </li>
+
+            <li id="cau_c">
+                <input type="radio" name="cautraloi" class="theAnswer" id="quest_c">
+                <span>C. <label id="c_theAnswer" for="c"></label></span>
+            </li>
+            <li id="cau_d">
+                <input type="radio" name="cautraloi" class="theAnswer" id="quest_d">
+                <span>D. <label id="d_theAnswer" for="d"></label></span>
+            </li>
+            <input id="correct_answer" type="hidden">
+            <input id="total_correctAns" type="hidden">
+        </ul>
+    <button id="submit" class="btn btn-primary">Next</button>
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
